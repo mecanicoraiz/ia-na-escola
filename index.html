@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidade sobre Tecnologia</title>
+</head>
+<body>
+
+    <h1>Curiosidade sobre Tecnologia</h1>
+
+    <p class="mensagem">Clique no botão para descobrir uma curiosidade!</p>
+
+    <button class="botao">Mostrar curiosidade</button>
+
+    <script>
+        const botao = document.querySelector(".botao");
+        const mensagem = document.querySelector(".mensagem");
+
+        function mostrarMensagem() {
+            mensagem.textContent = "A tecnologia está presente em várias atividades do nosso dia a dia!";
+        }
+
+        botao.addEventListener("click", mostrarMensagem);
+    </script>
+
+</body>
+</html>
