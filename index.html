@@ -3,22 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curiosidade sobre Tecnologia</title>
+
+    <title>Curiosidade Tech</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background-color: white;
+            padding: 45px 35px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .icone {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .subtitulo {
+            color: #777;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .mensagem {
+            background-color: #f1f5ff;
+            color: #4b4b4b;
+            padding: 18px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .botao {
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(37, 117, 252, 0.4);
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Curiosidade sobre Tecnologia</h1>
+    <div class="container">
 
-    <p class="mensagem">Clique no botão para descobrir uma curiosidade!</p>
+        <div class="icone">💻</div>
 
-    <button class="botao">Mostrar curiosidade</button>
+        <h1>Curiosidade Tech</h1>
+
+        <p class="subtitulo">
+            Descubra uma curiosidade sobre tecnologia!
+        </p>
+
+        <p class="mensagem">
+            Clique no botão para descobrir uma curiosidade.
+        </p>
+
+        <button class="botao">
+            ✨ Mostrar curiosidade
+        </button>
+
+    </div>
 
     <script>
         const botao = document.querySelector(".botao");
         const mensagem = document.querySelector(".mensagem");
 
         function mostrarMensagem() {
-            mensagem.textContent = "A tecnologia está presente em várias atividades do nosso dia a dia!";
+            mensagem.textContent =
+                "🚀 A tecnologia está presente em quase tudo que fazemos, desde conversar com amigos até estudar e trabalhar!";
         }
 
         botao.addEventListener("click", mostrarMensagem);
